@@ -45,14 +45,61 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BazaSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BazaSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="KoniecGry.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="KoniecGry.Designer.cs">
+      <DependentUpon>KoniecGry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuGlowne.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MenuGlowne.Designer.cs">
+      <DependentUpon>MenuGlowne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NowaGra.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="NowaGra.Designer.cs">
+      <DependentUpon>NowaGra.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PytanieDoPublicznosci.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PytanieDoPublicznosci.Designer.cs">
+      <DependentUpon>PytanieDoPublicznosci.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Statystyki.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Statystyki.Designer.cs">
+      <DependentUpon>Statystyki.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KoniecGry.resx">
+      <DependentUpon>KoniecGry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuGlowne.resx">
+      <DependentUpon>MenuGlowne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NowaGra.resx">
+      <DependentUpon>NowaGra.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,6 +109,20 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Statystyki.resx">
+      <DependentUpon>Statystyki.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="BazaSet.xsc">
+      <DependentUpon>BazaSet.xsd</DependentUpon>
+    </None>
+    <None Include="BazaSet.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>BazaSet.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="BazaSet.xss">
+      <DependentUpon>BazaSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
