@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace milionerzy
 {
-    public partial class Statystyki : UserControl
+    public partial class ListaPytań : UserControl
     {
-        public Statystyki()
+        public ListaPytań()
         {
             InitializeComponent();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
