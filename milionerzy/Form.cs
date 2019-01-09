@@ -10,17 +10,15 @@ using System.Windows.Forms;
 
 namespace milionerzy
 {
-    public partial class main : Form
+    public partial class Milionerzy : Form
     {
-        public main()
+        public Milionerzy()
         {
             InitializeComponent();
+            menuGlowne1.BringToFront();
+            
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-    
+        
     }
 }

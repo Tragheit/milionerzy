@@ -17,14 +17,26 @@ namespace milionerzy
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void nowaGraClicked(object sender, EventArgs e)
         {
-
+            var temp = new PodajNick();
+            temp.Parent = this;
+            temp.Dock = DockStyle.Fill;
+            temp.BringToFront();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void statystykiClicked(object sender, EventArgs e)
         {
 
+            var temp = new Statystyki();     
+            temp.Parent = this;
+            temp.Dock = DockStyle.Fill;
+            temp.BringToFront();
+        }
+
+        private void koniecGryClicked(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

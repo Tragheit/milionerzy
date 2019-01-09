@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="JiPP2018Z502Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Historia_Gier">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nick" Type="varchar" MaxLength="30" Nullable="false" />
+          <Property Name="Wynik" Type="int" Nullable="false" />
+          <Property Name="Uzyte_kola" Type="int" Nullable="false" />
+          <Property Name="Pytanie_koncowe" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Pytania">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" />
+          <Property Name="Tresc" Type="nvarchar" MaxLength="250" Nullable="false" />
+          <Property Name="Poprawna_odpowiedz" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Falszywa_odpowiedz_1" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Falszywa_odpowiedz_2" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="Falszywa_odpowiedz_3" Type="varchar" MaxLength="50" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="JiPP2018Z502ModelStoreContainer">
+          <EntitySet Name="Historia_Gier" EntityType="Self.Historia_Gier" Schema="JiPPrlewandowski" store:Type="Tables" />
+          <EntitySet Name="Pytania" EntityType="Self.Pytania" Schema="JiPPrlewandowski" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="JiPP2018Z502Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Historia_Gier">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nick" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Wynik" Type="Int32" Nullable="false" />
+          <Property Name="Uzyte_kola" Type="Int32" Nullable="false" />
+          <Property Name="Pytanie_koncowe" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Pytania">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" />
+          <Property Name="Tresc" Type="String" MaxLength="250" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Poprawna_odpowiedz" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Falszywa_odpowiedz_1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Falszywa_odpowiedz_2" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="Falszywa_odpowiedz_3" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
+        <EntityContainer Name="JiPP2018Z502Entities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Historia_Gier" EntityType="Self.Historia_Gier" />
+          <EntitySet Name="Pytania" EntityType="Self.Pytania" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="JiPP2018Z502ModelStoreContainer" CdmEntityContainer="JiPP2018Z502Entities">
+          <EntitySetMapping Name="Historia_Gier">
+            <EntityTypeMapping TypeName="JiPP2018Z502Model.Historia_Gier">
+              <MappingFragment StoreEntitySet="Historia_Gier">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Nick" ColumnName="Nick" />
+                <ScalarProperty Name="Wynik" ColumnName="Wynik" />
+                <ScalarProperty Name="Uzyte_kola" ColumnName="Uzyte_kola" />
+                <ScalarProperty Name="Pytanie_koncowe" ColumnName="Pytanie_koncowe" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Pytania">
+            <EntityTypeMapping TypeName="JiPP2018Z502Model.Pytania">
+              <MappingFragment StoreEntitySet="Pytania">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="Tresc" ColumnName="Tresc" />
+                <ScalarProperty Name="Poprawna_odpowiedz" ColumnName="Poprawna_odpowiedz" />
+                <ScalarProperty Name="Falszywa_odpowiedz_1" ColumnName="Falszywa_odpowiedz_1" />
+                <ScalarProperty Name="Falszywa_odpowiedz_2" ColumnName="Falszywa_odpowiedz_2" />
+                <ScalarProperty Name="Falszywa_odpowiedz_3" ColumnName="Falszywa_odpowiedz_3" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

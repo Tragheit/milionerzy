@@ -16,5 +16,27 @@ namespace milionerzy
         {
             InitializeComponent();
         }
+
+        public void changeRate(int nrPytania)
+        {
+            foreach(Control e in tableLayoutPanel1.Controls.OfType<Button>())
+            {
+                if (e.Name.Equals("pytanie" + nrPytania))
+                    e.BackColor = Color.DarkOrange;
+                else
+                    e.BackColor = Color.Transparent;
+            }
+        }
+        public String GetWynik()
+        {
+            String result = "";
+
+            foreach (Control e in tableLayoutPanel1.Controls.OfType<Button>())
+            {
+                if (e.BackColor == Color.DarkOrange)
+                    result = e.Text;
+            }
+            return result;
+        }
     }
 }

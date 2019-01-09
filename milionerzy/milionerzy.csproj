@@ -32,8 +32,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -46,16 +55,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BazaSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>BazaSet.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="Form.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Form.Designer.cs">
+      <DependentUpon>Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Historia_Gier.cs">
+      <DependentUpon>Model.tt</DependentUpon>
     </Compile>
     <Compile Include="KoniecGry.cs">
       <SubType>UserControl</SubType>
@@ -75,14 +82,38 @@
     <Compile Include="MenuGlowne.Designer.cs">
       <DependentUpon>MenuGlowne.cs</DependentUpon>
     </Compile>
+    <Compile Include="Model.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model.edmx</DependentUpon>
+    </Compile>
     <Compile Include="NowaGra.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="NowaGra.Designer.cs">
       <DependentUpon>NowaGra.cs</DependentUpon>
     </Compile>
+    <Compile Include="PodajNick.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PodajNick.Designer.cs">
+      <DependentUpon>PodajNick.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Pytania.cs">
+      <DependentUpon>Model.tt</DependentUpon>
+    </Compile>
     <Compile Include="PytanieDoPublicznosci.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -95,8 +126,14 @@
     <Compile Include="Statystyki.Designer.cs">
       <DependentUpon>Statystyki.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Wygrana.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Wygrana.Designer.cs">
+      <DependentUpon>Wygrana.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form.resx">
+      <DependentUpon>Form.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="KoniecGry.resx">
       <DependentUpon>KoniecGry.cs</DependentUpon>
@@ -109,6 +146,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="NowaGra.resx">
       <DependentUpon>NowaGra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PodajNick.resx">
+      <DependentUpon>PodajNick.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -125,17 +165,18 @@
     <EmbeddedResource Include="Statystyki.resx">
       <DependentUpon>Statystyki.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="BazaSet.xsc">
-      <DependentUpon>BazaSet.xsd</DependentUpon>
+    <EmbeddedResource Include="Wygrana.resx">
+      <DependentUpon>Wygrana.cs</DependentUpon>
+    </EmbeddedResource>
+    <EntityDeploy Include="Model.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model.edmx.diagram">
+      <DependentUpon>Model.edmx</DependentUpon>
     </None>
-    <None Include="BazaSet.xsd">
-      <SubType>Designer</SubType>
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>BazaSet.Designer.cs</LastGenOutput>
-    </None>
-    <None Include="BazaSet.xss">
-      <DependentUpon>BazaSet.xsd</DependentUpon>
-    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\JiPP2018Z502.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -148,6 +189,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model.edmx</DependentUpon>
+      <LastGenOutput>Model.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model.edmx</DependentUpon>
+      <LastGenOutput>Model.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

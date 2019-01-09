@@ -10,11 +10,12 @@ using System.Windows.Forms;
 
 namespace milionerzy
 {
-    public partial class Statystyki : UserControl
+    public partial class Wygrana : UserControl
     {
-        public Statystyki()
+        public Wygrana(String nick)
         {
             InitializeComponent();
+            this.graczNick.Text = nick;
         }
     }
 }

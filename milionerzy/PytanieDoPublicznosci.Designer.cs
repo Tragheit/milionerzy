@@ -52,7 +52,6 @@
             this.progressBar2.Name = "progressBar2";
             this.progressBar2.Size = new System.Drawing.Size(30, 120);
             this.progressBar2.TabIndex = 2;
-            this.progressBar2.Click += new System.EventHandler(this.progressBar2_Click);
             // 
             // progressBar3
             // 
@@ -111,7 +110,6 @@
             this.label1.Size = new System.Drawing.Size(21, 20);
             this.label1.TabIndex = 5;
             this.label1.Text = "A";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // PytanieDoPublicznosci
             // 

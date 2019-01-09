@@ -16,20 +16,5 @@ namespace milionerzy
         {
             InitializeComponent();
         }
-
-        private void chart1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void progressBar2_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }

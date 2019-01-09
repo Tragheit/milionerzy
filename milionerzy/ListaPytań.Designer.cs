@@ -28,161 +28,134 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ListaPytań));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
+            this.pytanie7 = new System.Windows.Forms.Button();
+            this.pytanie6 = new System.Windows.Forms.Button();
+            this.pytanie5 = new System.Windows.Forms.Button();
+            this.pytanie4 = new System.Windows.Forms.Button();
+            this.pytanie3 = new System.Windows.Forms.Button();
+            this.pytanie2 = new System.Windows.Forms.Button();
+            this.pytanie1 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.BackColor = System.Drawing.Color.SteelBlue;
+            this.tableLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.tableLayoutPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("tableLayoutPanel1.BackgroundImage")));
             this.tableLayoutPanel1.ColumnCount = 3;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 90F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Controls.Add(this.button1, 1, 1);
-            this.tableLayoutPanel1.Controls.Add(this.button2, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.button3, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.button5, 1, 5);
-            this.tableLayoutPanel1.Controls.Add(this.button4, 1, 6);
-            this.tableLayoutPanel1.Controls.Add(this.button6, 1, 4);
-            this.tableLayoutPanel1.Controls.Add(this.button7, 1, 7);
-            this.tableLayoutPanel1.Controls.Add(this.button9, 1, 9);
-            this.tableLayoutPanel1.Controls.Add(this.button10, 1, 8);
+            this.tableLayoutPanel1.Controls.Add(this.pytanie7, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.pytanie6, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.pytanie5, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.pytanie4, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.pytanie3, 1, 5);
+            this.tableLayoutPanel1.Controls.Add(this.pytanie2, 1, 6);
+            this.tableLayoutPanel1.Controls.Add(this.pytanie1, 1, 7);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 11;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
+            this.tableLayoutPanel1.RowCount = 9;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.5F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 6.25F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(249, 363);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // button1
+            // pytanie7
             // 
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button1.Location = new System.Drawing.Point(15, 21);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(218, 30);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.pytanie7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pytanie7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pytanie7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.pytanie7.Location = new System.Drawing.Point(15, 25);
+            this.pytanie7.Name = "pytanie7";
+            this.pytanie7.Size = new System.Drawing.Size(218, 39);
+            this.pytanie7.TabIndex = 0;
+            this.pytanie7.Text = "1 000 000 $";
+            this.pytanie7.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // pytanie6
             // 
-            this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button2.Location = new System.Drawing.Point(15, 57);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(218, 30);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.pytanie6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pytanie6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pytanie6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.pytanie6.Location = new System.Drawing.Point(15, 70);
+            this.pytanie6.Name = "pytanie6";
+            this.pytanie6.Size = new System.Drawing.Size(218, 39);
+            this.pytanie6.TabIndex = 1;
+            this.pytanie6.Text = "500 000 $";
+            this.pytanie6.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // pytanie5
             // 
-            this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button3.Location = new System.Drawing.Point(15, 93);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(218, 30);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.pytanie5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pytanie5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pytanie5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.pytanie5.Location = new System.Drawing.Point(15, 115);
+            this.pytanie5.Name = "pytanie5";
+            this.pytanie5.Size = new System.Drawing.Size(218, 39);
+            this.pytanie5.TabIndex = 2;
+            this.pytanie5.Text = "250 000 $";
+            this.pytanie5.UseVisualStyleBackColor = true;
+            this.pytanie5.Click += new System.EventHandler(this.pytanie3_Click);
             // 
-            // button4
+            // pytanie4
             // 
-            this.button4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button4.Location = new System.Drawing.Point(15, 201);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(218, 30);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.pytanie4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pytanie4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pytanie4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.pytanie4.Location = new System.Drawing.Point(15, 160);
+            this.pytanie4.Name = "pytanie4";
+            this.pytanie4.Size = new System.Drawing.Size(218, 39);
+            this.pytanie4.TabIndex = 3;
+            this.pytanie4.Text = "100 000 $";
+            this.pytanie4.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // pytanie3
             // 
-            this.button5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button5.Location = new System.Drawing.Point(15, 165);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(218, 30);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
+            this.pytanie3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pytanie3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pytanie3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.pytanie3.Location = new System.Drawing.Point(15, 205);
+            this.pytanie3.Name = "pytanie3";
+            this.pytanie3.Size = new System.Drawing.Size(218, 39);
+            this.pytanie3.TabIndex = 6;
+            this.pytanie3.Text = "20 000 $";
+            this.pytanie3.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // pytanie2
             // 
-            this.button6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button6.Location = new System.Drawing.Point(15, 129);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(218, 30);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "button6";
-            this.button6.UseVisualStyleBackColor = true;
+            this.pytanie2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pytanie2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pytanie2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.pytanie2.Location = new System.Drawing.Point(15, 250);
+            this.pytanie2.Name = "pytanie2";
+            this.pytanie2.Size = new System.Drawing.Size(218, 39);
+            this.pytanie2.TabIndex = 9;
+            this.pytanie2.Text = "2 000 $";
+            this.pytanie2.UseVisualStyleBackColor = true;
+            this.pytanie2.Click += new System.EventHandler(this.pytanie6_Click);
             // 
-            // button7
+            // pytanie1
             // 
-            this.button7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button7.Location = new System.Drawing.Point(15, 237);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(218, 30);
-            this.button7.TabIndex = 6;
-            this.button7.Text = "button7";
-            this.button7.UseVisualStyleBackColor = true;
-            // 
-            // button9
-            // 
-            this.button9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button9.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button9.Location = new System.Drawing.Point(15, 309);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(218, 30);
-            this.button9.TabIndex = 8;
-            this.button9.Text = "button9";
-            this.button9.UseVisualStyleBackColor = true;
-            // 
-            // button10
-            // 
-            this.button10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button10.Location = new System.Drawing.Point(15, 273);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(218, 30);
-            this.button10.TabIndex = 9;
-            this.button10.Text = "button10";
-            this.button10.UseVisualStyleBackColor = true;
+            this.pytanie1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pytanie1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.pytanie1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.pytanie1.Location = new System.Drawing.Point(15, 295);
+            this.pytanie1.Name = "pytanie1";
+            this.pytanie1.Size = new System.Drawing.Size(218, 39);
+            this.pytanie1.TabIndex = 8;
+            this.pytanie1.Text = "250 $";
+            this.pytanie1.UseVisualStyleBackColor = true;
             // 
             // ListaPytań
             // 
@@ -199,14 +172,12 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button pytanie7;
+        private System.Windows.Forms.Button pytanie6;
+        private System.Windows.Forms.Button pytanie5;
+        private System.Windows.Forms.Button pytanie4;
+        private System.Windows.Forms.Button pytanie3;
+        private System.Windows.Forms.Button pytanie1;
+        private System.Windows.Forms.Button pytanie2;
     }
 }

@@ -30,9 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MenuGlowne));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.nowGraButton = new System.Windows.Forms.Button();
+            this.wyjdzButton = new System.Windows.Forms.Button();
+            this.statystykiButton = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -47,9 +47,9 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel1.Controls.Add(this.button1, 2, 3);
-            this.tableLayoutPanel1.Controls.Add(this.button2, 2, 7);
-            this.tableLayoutPanel1.Controls.Add(this.button3, 2, 5);
+            this.tableLayoutPanel1.Controls.Add(this.nowGraButton, 2, 3);
+            this.tableLayoutPanel1.Controls.Add(this.wyjdzButton, 2, 7);
+            this.tableLayoutPanel1.Controls.Add(this.statystykiButton, 2, 5);
             this.tableLayoutPanel1.Controls.Add(this.label1, 1, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
@@ -67,47 +67,50 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(736, 424);
             this.tableLayoutPanel1.TabIndex = 4;
             // 
-            // button1
+            // nowGraButton
             // 
-            this.button1.BackColor = System.Drawing.Color.MidnightBlue;
-            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button1.ForeColor = System.Drawing.Color.Gold;
-            this.button1.Location = new System.Drawing.Point(260, 204);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(214, 49);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "NOWA GRA";
-            this.button1.UseVisualStyleBackColor = false;
+            this.nowGraButton.BackColor = System.Drawing.Color.MidnightBlue;
+            this.nowGraButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.nowGraButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.nowGraButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.nowGraButton.ForeColor = System.Drawing.Color.Gold;
+            this.nowGraButton.Location = new System.Drawing.Point(260, 204);
+            this.nowGraButton.Name = "nowGraButton";
+            this.nowGraButton.Size = new System.Drawing.Size(214, 49);
+            this.nowGraButton.TabIndex = 1;
+            this.nowGraButton.Text = "NOWA GRA";
+            this.nowGraButton.UseVisualStyleBackColor = false;
+            this.nowGraButton.Click += new System.EventHandler(this.nowaGraClicked);
             // 
-            // button3
+            // wyjdzButton
             // 
-            this.button3.BackColor = System.Drawing.Color.MidnightBlue;
-            this.button3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button3.ForeColor = System.Drawing.Color.Gold;
-            this.button3.Location = new System.Drawing.Point(260, 277);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(214, 49);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "STATYSTYKI";
-            this.button3.UseVisualStyleBackColor = false;
+            this.wyjdzButton.BackColor = System.Drawing.Color.MidnightBlue;
+            this.wyjdzButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.wyjdzButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.wyjdzButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.wyjdzButton.ForeColor = System.Drawing.Color.Gold;
+            this.wyjdzButton.Location = new System.Drawing.Point(260, 350);
+            this.wyjdzButton.Name = "wyjdzButton";
+            this.wyjdzButton.Size = new System.Drawing.Size(214, 49);
+            this.wyjdzButton.TabIndex = 2;
+            this.wyjdzButton.Text = "WYJDŹ";
+            this.wyjdzButton.UseVisualStyleBackColor = false;
+            this.wyjdzButton.Click += new System.EventHandler(this.koniecGryClicked);
             // 
-            // button2
+            // statystykiButton
             // 
-            this.button2.BackColor = System.Drawing.Color.MidnightBlue;
-            this.button2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.button2.ForeColor = System.Drawing.Color.Gold;
-            this.button2.Location = new System.Drawing.Point(260, 350);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(214, 49);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "WYJDŹ";
-            this.button2.UseVisualStyleBackColor = false;
+            this.statystykiButton.BackColor = System.Drawing.Color.MidnightBlue;
+            this.statystykiButton.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.statystykiButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.statystykiButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.statystykiButton.ForeColor = System.Drawing.Color.Gold;
+            this.statystykiButton.Location = new System.Drawing.Point(260, 277);
+            this.statystykiButton.Name = "statystykiButton";
+            this.statystykiButton.Size = new System.Drawing.Size(214, 49);
+            this.statystykiButton.TabIndex = 3;
+            this.statystykiButton.Text = "STATYSTYKI";
+            this.statystykiButton.UseVisualStyleBackColor = false;
+            this.statystykiButton.Click += new System.EventHandler(this.statystykiClicked);
             // 
             // label1
             // 
@@ -141,9 +144,9 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button nowGraButton;
+        private System.Windows.Forms.Button statystykiButton;
+        private System.Windows.Forms.Button wyjdzButton;
         private System.Windows.Forms.Label label1;
     }
 }

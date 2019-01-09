@@ -12,9 +12,13 @@ namespace milionerzy
 {
     public partial class KoniecGry : UserControl
     {
-        public KoniecGry()
+        public KoniecGry(String nick, String wynik, String pytanie, String koła)
         {
             InitializeComponent();
+            nickLabel.Text = "Nick: " + nick;
+            wynikLabel.Text = "Wynik: " + wynik;
+            pytanieLabel.Text = "Ostatnie Pytanie: " + pytanie;
+            kołaLabel.Text = koła;      
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
