@@ -41,6 +41,10 @@
             this.publicznoscButton = new System.Windows.Forms.Button();
             this.polowaButton = new System.Windows.Forms.Button();
             this.rezygnujeButton = new System.Windows.Forms.Button();
+            this.PBB = new System.Windows.Forms.ProgressBar();
+            this.PBA = new System.Windows.Forms.ProgressBar();
+            this.PBC = new System.Windows.Forms.ProgressBar();
+            this.PBD = new System.Windows.Forms.ProgressBar();
             this.listaPytań1 = new milionerzy.ListaPytań();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -165,6 +169,10 @@
             this.tableLayoutPanel2.Controls.Add(this.odpBButton, 3, 3);
             this.tableLayoutPanel2.Controls.Add(this.odpCButton, 1, 5);
             this.tableLayoutPanel2.Controls.Add(this.odpDButton, 3, 5);
+            this.tableLayoutPanel2.Controls.Add(this.PBB, 4, 3);
+            this.tableLayoutPanel2.Controls.Add(this.PBA, 2, 3);
+            this.tableLayoutPanel2.Controls.Add(this.PBC, 2, 5);
+            this.tableLayoutPanel2.Controls.Add(this.PBD, 4, 5);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 3);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -297,6 +305,7 @@
             this.telefonButton.Size = new System.Drawing.Size(51, 74);
             this.telefonButton.TabIndex = 1;
             this.telefonButton.UseVisualStyleBackColor = true;
+            this.telefonButton.Click += new System.EventHandler(this.TelefonKoloClicked);
             // 
             // publicznoscButton
             // 
@@ -309,6 +318,7 @@
             this.publicznoscButton.Size = new System.Drawing.Size(51, 74);
             this.publicznoscButton.TabIndex = 2;
             this.publicznoscButton.UseVisualStyleBackColor = true;
+            this.publicznoscButton.Click += new System.EventHandler(this.pulicznoscKoloClicked);
             // 
             // polowaButton
             // 
@@ -321,6 +331,7 @@
             this.polowaButton.Size = new System.Drawing.Size(51, 74);
             this.polowaButton.TabIndex = 3;
             this.polowaButton.UseVisualStyleBackColor = true;
+            this.polowaButton.Click += new System.EventHandler(this.polNaPolKoloClicked);
             // 
             // rezygnujeButton
             // 
@@ -335,6 +346,47 @@
             this.rezygnujeButton.TabIndex = 4;
             this.rezygnujeButton.Text = "REZYGNUJĘ";
             this.rezygnujeButton.UseVisualStyleBackColor = false;
+            this.rezygnujeButton.Click += new System.EventHandler(this.rezygnujClicked);
+            // 
+            // PBB
+            // 
+            this.PBB.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PBB.Location = new System.Drawing.Point(643, 222);
+            this.PBB.Name = "PBB";
+            this.PBB.Size = new System.Drawing.Size(30, 104);
+            this.PBB.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.PBB.TabIndex = 5;
+            this.PBB.Visible = false;
+            // 
+            // PBA
+            // 
+            this.PBA.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PBA.Location = new System.Drawing.Point(323, 222);
+            this.PBA.Name = "PBA";
+            this.PBA.Size = new System.Drawing.Size(27, 104);
+            this.PBA.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.PBA.TabIndex = 6;
+            this.PBA.Visible = false;
+            // 
+            // PBC
+            // 
+            this.PBC.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PBC.Location = new System.Drawing.Point(323, 359);
+            this.PBC.Name = "PBC";
+            this.PBC.Size = new System.Drawing.Size(27, 104);
+            this.PBC.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.PBC.TabIndex = 7;
+            this.PBC.Visible = false;
+            // 
+            // PBD
+            // 
+            this.PBD.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PBD.Location = new System.Drawing.Point(643, 359);
+            this.PBD.Name = "PBD";
+            this.PBD.Size = new System.Drawing.Size(30, 104);
+            this.PBD.Style = System.Windows.Forms.ProgressBarStyle.Continuous;
+            this.PBD.TabIndex = 8;
+            this.PBD.Visible = false;
             // 
             // listaPytań1
             // 
@@ -375,5 +427,9 @@
         private System.Windows.Forms.Button odpCButton;
         private System.Windows.Forms.Button odpDButton;
         private PytanieDoPublicznosci pytanieDoPublicznosci1;
+        private System.Windows.Forms.ProgressBar PBB;
+        private System.Windows.Forms.ProgressBar PBA;
+        private System.Windows.Forms.ProgressBar PBC;
+        private System.Windows.Forms.ProgressBar PBD;
     }
 }

@@ -27,14 +27,26 @@ namespace milionerzy
                     e.BackColor = Color.Transparent;
             }
         }
-        public String GetWynik()
+        public int GetWynik()
+        {
+            int result = 0;
+
+            foreach (Control e in tableLayoutPanel1.Controls.OfType<Button>())
+            {
+                if (e.BackColor == Color.DarkOrange)
+                    result += Int32.Parse(e.Name.Substring(7));
+            }
+            return result;
+        }
+
+        public string showAward()
         {
             String result = "";
 
             foreach (Control e in tableLayoutPanel1.Controls.OfType<Button>())
             {
                 if (e.BackColor == Color.DarkOrange)
-                    result = e.Text;
+                    result += e.Text;
             }
             return result;
         }

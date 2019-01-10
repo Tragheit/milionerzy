@@ -34,12 +34,13 @@
             this.wynikLabel = new System.Windows.Forms.Label();
             this.pytanieLabel = new System.Windows.Forms.Label();
             this.kołaLabel = new System.Windows.Forms.Label();
-            this.telefonPB = new System.Windows.Forms.PictureBox();
             this.publikaPB = new System.Windows.Forms.PictureBox();
+            this.telefonPB = new System.Windows.Forms.PictureBox();
             this.polowaPB = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.telefonPB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.publikaPB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.telefonPB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.polowaPB)).BeginInit();
             this.SuspendLayout();
             // 
@@ -61,22 +62,27 @@
             this.tableLayoutPanel1.Controls.Add(this.publikaPB, 3, 7);
             this.tableLayoutPanel1.Controls.Add(this.telefonPB, 1, 7);
             this.tableLayoutPanel1.Controls.Add(this.polowaPB, 5, 7);
+            this.tableLayoutPanel1.Controls.Add(this.button1, 1, 9);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 9;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(891, 389);
+            this.tableLayoutPanel1.RowCount = 11;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.761905F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.761905F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.761905F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.761905F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 19.04762F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.761905F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 9.523809F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.761905F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(891, 438);
             this.tableLayoutPanel1.TabIndex = 0;
-            this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // nickLabel
             // 
@@ -85,9 +91,9 @@
             this.nickLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.nickLabel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.nickLabel.Font = new System.Drawing.Font("Lato", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.nickLabel.Location = new System.Drawing.Point(313, 19);
+            this.nickLabel.Location = new System.Drawing.Point(313, 20);
             this.nickLabel.Name = "nickLabel";
-            this.nickLabel.Size = new System.Drawing.Size(261, 58);
+            this.nickLabel.Size = new System.Drawing.Size(261, 62);
             this.nickLabel.TabIndex = 0;
             this.nickLabel.Text = "label1";
             this.nickLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -99,9 +105,9 @@
             this.wynikLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.wynikLabel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.wynikLabel.Font = new System.Drawing.Font("Lato", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.wynikLabel.Location = new System.Drawing.Point(47, 96);
+            this.wynikLabel.Location = new System.Drawing.Point(47, 102);
             this.wynikLabel.Name = "wynikLabel";
-            this.wynikLabel.Size = new System.Drawing.Size(216, 58);
+            this.wynikLabel.Size = new System.Drawing.Size(216, 62);
             this.wynikLabel.TabIndex = 1;
             this.wynikLabel.Text = "WYNIK";
             this.wynikLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -113,9 +119,9 @@
             this.pytanieLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pytanieLabel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pytanieLabel.Font = new System.Drawing.Font("Lato", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.pytanieLabel.Location = new System.Drawing.Point(624, 96);
+            this.pytanieLabel.Location = new System.Drawing.Point(624, 102);
             this.pytanieLabel.Name = "pytanieLabel";
-            this.pytanieLabel.Size = new System.Drawing.Size(216, 58);
+            this.pytanieLabel.Size = new System.Drawing.Size(216, 62);
             this.pytanieLabel.TabIndex = 2;
             this.pytanieLabel.Text = "PYTANIE";
             this.pytanieLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -127,12 +133,23 @@
             this.kołaLabel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.kołaLabel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.kołaLabel.Font = new System.Drawing.Font("Lato", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.kołaLabel.Location = new System.Drawing.Point(313, 173);
+            this.kołaLabel.Location = new System.Drawing.Point(313, 184);
             this.kołaLabel.Name = "kołaLabel";
-            this.kołaLabel.Size = new System.Drawing.Size(261, 58);
+            this.kołaLabel.Size = new System.Drawing.Size(261, 62);
             this.kołaLabel.TabIndex = 3;
             this.kołaLabel.Text = "WYKORZYSTANE KOŁA RATUNKOWE";
             this.kołaLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // publikaPB
+            // 
+            this.publikaPB.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("publikaPB.BackgroundImage")));
+            this.publikaPB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.publikaPB.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.publikaPB.Location = new System.Drawing.Point(313, 269);
+            this.publikaPB.Name = "publikaPB";
+            this.publikaPB.Size = new System.Drawing.Size(261, 77);
+            this.publikaPB.TabIndex = 5;
+            this.publikaPB.TabStop = false;
             // 
             // telefonPB
             // 
@@ -140,33 +157,37 @@
             this.telefonPB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.telefonPB.Dock = System.Windows.Forms.DockStyle.Fill;
             this.telefonPB.InitialImage = null;
-            this.telefonPB.Location = new System.Drawing.Point(47, 253);
+            this.telefonPB.Location = new System.Drawing.Point(47, 269);
             this.telefonPB.Name = "telefonPB";
-            this.telefonPB.Size = new System.Drawing.Size(216, 110);
+            this.telefonPB.Size = new System.Drawing.Size(216, 77);
             this.telefonPB.TabIndex = 4;
             this.telefonPB.TabStop = false;
-            // 
-            // publikaPB
-            // 
-            this.publikaPB.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("publikaPB.BackgroundImage")));
-            this.publikaPB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.publikaPB.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.publikaPB.Location = new System.Drawing.Point(313, 253);
-            this.publikaPB.Name = "publikaPB";
-            this.publikaPB.Size = new System.Drawing.Size(261, 110);
-            this.publikaPB.TabIndex = 5;
-            this.publikaPB.TabStop = false;
             // 
             // polowaPB
             // 
             this.polowaPB.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("polowaPB.BackgroundImage")));
             this.polowaPB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.polowaPB.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.polowaPB.Location = new System.Drawing.Point(624, 253);
+            this.polowaPB.Location = new System.Drawing.Point(624, 269);
             this.polowaPB.Name = "polowaPB";
-            this.polowaPB.Size = new System.Drawing.Size(216, 110);
+            this.polowaPB.Size = new System.Drawing.Size(216, 77);
             this.polowaPB.TabIndex = 6;
             this.polowaPB.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.DarkOrange;
+            this.tableLayoutPanel1.SetColumnSpan(this.button1, 5);
+            this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Lato", 15.75F, System.Drawing.FontStyle.Bold);
+            this.button1.Location = new System.Drawing.Point(47, 372);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(793, 35);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Zacznij od nowa";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.zacznijOdNowaClicked);
             // 
             // KoniecGry
             // 
@@ -174,11 +195,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "KoniecGry";
-            this.Size = new System.Drawing.Size(891, 389);
+            this.Size = new System.Drawing.Size(891, 438);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.telefonPB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.publikaPB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.telefonPB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.polowaPB)).EndInit();
             this.ResumeLayout(false);
 
@@ -194,5 +215,6 @@
         private System.Windows.Forms.PictureBox publikaPB;
         private System.Windows.Forms.PictureBox telefonPB;
         private System.Windows.Forms.PictureBox polowaPB;
+        private System.Windows.Forms.Button button1;
     }
 }

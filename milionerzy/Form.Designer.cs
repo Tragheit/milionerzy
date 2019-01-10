@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.menuGlowne1 = new milionerzy.MenuGlowne();
+            this.menuGlowne2 = new milionerzy.MenuGlowne();
             this.SuspendLayout();
             // 
             // menuGlowne1
@@ -39,13 +40,20 @@
             this.menuGlowne1.Size = new System.Drawing.Size(761, 436);
             this.menuGlowne1.TabIndex = 0;
             // 
+            // menuGlowne2
+            // 
+            this.menuGlowne2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.menuGlowne2.Location = new System.Drawing.Point(0, 0);
+            this.menuGlowne2.Name = "menuGlowne2";
+            this.menuGlowne2.Size = new System.Drawing.Size(761, 436);
+            this.menuGlowne2.TabIndex = 0;
+            // 
             // Milionerzy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(761, 436);
-            this.Controls.Add(this.nowaGra1);
-            this.Controls.Add(this.menuGlowne1);
+            this.Controls.Add(this.menuGlowne2);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Name = "Milionerzy";
             this.Text = "Milionerzy";
@@ -57,6 +65,7 @@
 
         private MenuGlowne menuGlowne1;
         private NowaGra nowaGra1;
+        private MenuGlowne menuGlowne2;
     }
 }
 

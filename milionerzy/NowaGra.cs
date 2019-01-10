@@ -13,9 +13,10 @@ namespace milionerzy
     public partial class NowaGra : UserControl
     {
         private Random rnd = new Random();
-        private String nickGracza;
+        private string nickGracza;
         private int nrPytania = 0;
         private int roundCounter = 1;
+        string kola = "";
 
         public NowaGra(string Nick)
         {
@@ -56,13 +57,78 @@ namespace milionerzy
         }
 
         private void incorrectAnswerSelected(object sender, EventArgs e) {
-            gameOver(nickGracza, listaPytań1.GetWynik(), nrPytania.ToString(), "kola");
+            gameOver(nickGracza, listaPytań1.GetWynik(), nrPytania);
+        }
+
+        private void rezygnujClicked(object sender, EventArgs e)
+        {
+            gameOver(nickGracza, listaPytań1.GetWynik(), nrPytania);
+        }
+
+        private void TelefonKoloClicked(object sender, EventArgs e) {
+            kola += "TE";
+            telefonButton.Enabled = false;
+            telefonButton.BackgroundImage = Properties.Resources.telefon_uzyte;
+
+            var nieOdbiera = new NieOdbiera();
+            nieOdbiera.Parent = this;
+            nieOdbiera.Dock = DockStyle.Fill;
+            nieOdbiera.BringToFront();
+        }
+
+        private void pulicznoscKoloClicked(object sender, EventArgs e) {
+            kola += "PU";
+            publicznoscButton.Enabled = false;
+            publicznoscButton.BackgroundImage = Properties.Resources.publika_uzyte;
+
+            askAudience();
+        }
+
+        private void polNaPolKoloClicked(object sender, EventArgs e) {
+            kola += "PP";
+            polowaButton.Enabled = false;
+            polowaButton.BackgroundImage = Properties.Resources._5050_uzyte;
+
+            int index = rnd.Next(1, 3);
+            switch (index)
+            {
+                case 1:
+                    odpBButton.BackColor = Color.Gray;
+                    odpBButton.Enabled = false;
+              
+                    odpCButton.BackColor = Color.Gray;
+                    odpCButton.Enabled = false;
+                    break;
+                case 2:
+                    odpCButton.BackColor = Color.Gray;
+                    odpCButton.Enabled = false;
+
+                    odpDButton.BackColor = Color.Gray;
+                    odpDButton.Enabled = false;
+                    break;
+                case 3:
+                    odpBButton.BackColor = Color.Gray;
+                    odpBButton.Enabled = false;
+
+                    odpDButton.BackColor = Color.Gray;
+                    odpDButton.Enabled = false;
+                    break;
+            }
         }
 
         private void clearAnswers()
         {
             foreach (Control e in tableLayoutPanel2.Controls.OfType<Button>())
+            {
                 e.BackColor = Color.MidnightBlue;
+                e.Enabled = true;
+                e.ForeColor = Color.Gold;
+            }
+
+            foreach (Control e in tableLayoutPanel2.Controls.OfType<ProgressBar>())
+            {
+                e.Visible = false;
+            }
         }
 
         private void displayYouWin()
@@ -74,20 +140,91 @@ namespace milionerzy
 
             WaitNSeconds(3);
 
-            gameOver(nickGracza, listaPytań1.GetWynik(), nrPytania.ToString(), "kola");
+            gameOver(nickGracza, listaPytań1.GetWynik(), nrPytania);
         }
 
-        private void rezygnujClicked()
+        private void gameOver(String nick, int wynik, int numerPytania)
         {
-            gameOver(nickGracza, listaPytań1.GetWynik(), nrPytania.ToString(), "kola");
-        }
-
-        private void gameOver(String nick, String wynik, string numerPytania, String koła)
-        {
-            var koniecGry = new KoniecGry(nick, wynik, numerPytania, koła);
+            var koniecGry = new KoniecGry(nick, listaPytań1.showAward(), numerPytania, kola);
             koniecGry.Parent = this;
             koniecGry.Dock = DockStyle.Fill;
             koniecGry.BringToFront();
+
+            int[] wyniki = new int[] {0, 250, 2500, 20000, 100000, 250000, 500000, 1000000}; 
+
+            using (JiPP2018Z502Entities jippEntities = new JiPP2018Z502Entities())
+            {
+                Historia_Gier entity = new Historia_Gier(nick, wyniki[wynik], checkUsedLifeBuoys(), nrPytania);
+                jippEntities.Historia_Gier.Add(entity);
+                jippEntities.SaveChanges();
+            };
+        }
+
+        private void askAudience()
+        {
+            foreach (Control e in tableLayoutPanel2.Controls.OfType<ProgressBar>())
+            {
+                e.Visible = true;
+            }
+                
+
+            Random rnd = new Random();
+            int luckyDiceRoll = rnd.Next(1, 10);
+
+            switch (luckyDiceRoll)
+            {
+                case 1:
+                    setBarValues(60, 10, 20, 10);
+                    break;
+                case 2:
+                    setBarValues(10, 45, 15, 30);
+                    break;
+                case 3:
+                    setBarValues(70, 0, 10, 20);
+                    break;
+                case 4:
+                    setBarValues(55, 20, 10, 15);
+                    break;
+                case 5:
+                    setBarValues(5, 10, 15, 70);
+                    break;
+                case 6:
+                    setBarValues(80, 5, 2, 13);
+                    break;
+                case 7:
+                    setBarValues(90, 5, 2, 3);
+                    break;
+                case 8:
+                    setBarValues(99, 1, 0, 0);
+                    break;
+                case 9:
+                    setBarValues(0, 0, 90, 10);
+                    break;
+                case 10:
+                    setBarValues(44, 16, 25, 25);
+                    break;
+            }
+        }
+
+        private void setBarValues(int a, int b, int c, int d)
+        {
+            PBA.Increment(a);
+            PBB.Increment(b);
+            PBC.Increment(c);
+            PBD.Increment(d);
+        }
+
+        private int checkUsedLifeBuoys() {
+            int result = 0;
+
+            if (kola.Contains("TE"))
+                result++;
+            if (kola.Contains("PU"))
+                result++;
+            if (kola.Contains("PP"))
+                result++;
+
+            return result;       
         }
 
         private void WaitNSeconds(int seconds)

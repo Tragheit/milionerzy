@@ -14,6 +14,14 @@ namespace milionerzy
     
     public partial class Historia_Gier
     {
+        public Historia_Gier(string nick, int wynik, int kola, int nrPytania)
+        {
+            this.Nick = nick;
+            this.Wynik = wynik;
+            this.Uzyte_kola = kola;
+            this.Pytanie_koncowe = nrPytania;
+        }
+
         public int ID { get; set; }
         public string Nick { get; set; }
         public int Wynik { get; set; }

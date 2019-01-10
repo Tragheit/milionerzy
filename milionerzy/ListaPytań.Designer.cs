@@ -106,7 +106,6 @@
             this.pytanie5.TabIndex = 2;
             this.pytanie5.Text = "250 000 $";
             this.pytanie5.UseVisualStyleBackColor = true;
-            this.pytanie5.Click += new System.EventHandler(this.pytanie3_Click);
             // 
             // pytanie4
             // 
@@ -143,7 +142,6 @@
             this.pytanie2.TabIndex = 9;
             this.pytanie2.Text = "2 000 $";
             this.pytanie2.UseVisualStyleBackColor = true;
-            this.pytanie2.Click += new System.EventHandler(this.pytanie6_Click);
             // 
             // pytanie1
             // 
