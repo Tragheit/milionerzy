@@ -27,6 +27,9 @@ namespace milionerzy
 
         private void statystykiClicked(object sender, EventArgs e)
         {
+            FindForm().WindowState = FormWindowState.Maximized;
+            this.MinimumSize = this.Size;
+            this.MaximumSize = this.Size;
 
             var temp = new Statystyki();     
             temp.Parent = this;

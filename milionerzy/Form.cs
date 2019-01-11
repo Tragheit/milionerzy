@@ -16,7 +16,6 @@ namespace milionerzy
         {
             InitializeComponent();
             menuGlowne1.BringToFront();
-            
         }
 
         

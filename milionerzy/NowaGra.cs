@@ -14,7 +14,7 @@ namespace milionerzy
     {
         private Random rnd = new Random();
         private string nickGracza;
-        private int nrPytania = 0;
+        private int nrPytania = 1;
         private int roundCounter = 1;
         string kola = "";
 
@@ -26,10 +26,11 @@ namespace milionerzy
         }
 
         private void startRound() {
-            if (roundCounter++ > 8) {
+            if (roundCounter++ > 7) {
             displayYouWin();
             }
 
+            listaPytań1.changeRate(nrPytania++);
             this.Update();
 
             int index = rnd.Next(1, 20);
@@ -48,11 +49,7 @@ namespace milionerzy
         }
 
         private void correctAnswerSelected(object sender, EventArgs e) {
-            odpAButton.BackColor = Color.Green;
-            nrPytania++;
-            listaPytań1.changeRate(nrPytania);
-            listaPytań1.Refresh();
-            
+            odpAButton.BackColor = Color.Green;         
             startRound();
         }
 
@@ -145,7 +142,7 @@ namespace milionerzy
 
         private void gameOver(String nick, int wynik, int numerPytania)
         {
-            var koniecGry = new KoniecGry(nick, listaPytań1.showAward(), numerPytania, kola);
+            var koniecGry = new KoniecGry(nick, listaPytań1.showAward(), numerPytania - 1, kola);
             koniecGry.Parent = this;
             koniecGry.Dock = DockStyle.Fill;
             koniecGry.BringToFront();
@@ -154,7 +151,7 @@ namespace milionerzy
 
             using (JiPP2018Z502Entities jippEntities = new JiPP2018Z502Entities())
             {
-                Historia_Gier entity = new Historia_Gier(nick, wyniki[wynik], checkUsedLifeBuoys(), nrPytania);
+                Historia_Gier entity = new Historia_Gier(nick, wyniki[wynik], checkUsedLifeBuoys(), nrPytania - 1);
                 jippEntities.Historia_Gier.Add(entity);
                 jippEntities.SaveChanges();
             };

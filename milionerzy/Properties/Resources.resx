@@ -121,6 +121,24 @@
   <data name="5050_uzyte" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\50,50_used.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="active50" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jpge50.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="activePeople" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jpgePeople.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="activePhone" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jpgePhone.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="end50X" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jpge50X.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="endPeopleX" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jpgePeopleX.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="endPhoneX" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\jpgePhoneX.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="publika_uzyte" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\publika_used.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>

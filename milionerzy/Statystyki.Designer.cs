@@ -28,17 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Statystyki));
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
             System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.PunktyLabel = new System.Windows.Forms.Label();
             this.PytaniaLabel = new System.Windows.Forms.Label();
@@ -48,17 +44,11 @@
             this.kolaChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.rankingGrid = new System.Windows.Forms.DataGridView();
             this.RankingLabel = new System.Windows.Forms.Label();
-            this.wyswietlRankingBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.nickDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.wynikDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.uzytekolaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pytaniekoncoweDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.punktyChart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pytaniaChart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.kolaChart)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rankingGrid)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.wyswietlRankingBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -146,15 +136,12 @@
             // 
             chartArea1.Name = "ChartArea1";
             this.punktyChart.ChartAreas.Add(chartArea1);
+            this.punktyChart.Dock = System.Windows.Forms.DockStyle.Fill;
             legend1.Name = "Legend1";
             this.punktyChart.Legends.Add(legend1);
             this.punktyChart.Location = new System.Drawing.Point(413, 55);
             this.punktyChart.Name = "punktyChart";
-            series1.ChartArea = "ChartArea1";
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.punktyChart.Series.Add(series1);
-            this.punktyChart.Size = new System.Drawing.Size(300, 82);
+            this.punktyChart.Size = new System.Drawing.Size(308, 82);
             this.punktyChart.TabIndex = 3;
             this.punktyChart.Text = "chart1";
             // 
@@ -162,15 +149,12 @@
             // 
             chartArea2.Name = "ChartArea1";
             this.pytaniaChart.ChartAreas.Add(chartArea2);
+            this.pytaniaChart.Dock = System.Windows.Forms.DockStyle.Fill;
             legend2.Name = "Legend1";
             this.pytaniaChart.Legends.Add(legend2);
             this.pytaniaChart.Location = new System.Drawing.Point(413, 195);
             this.pytaniaChart.Name = "pytaniaChart";
-            series2.ChartArea = "ChartArea1";
-            series2.Legend = "Legend1";
-            series2.Name = "Series1";
-            this.pytaniaChart.Series.Add(series2);
-            this.pytaniaChart.Size = new System.Drawing.Size(300, 82);
+            this.pytaniaChart.Size = new System.Drawing.Size(308, 82);
             this.pytaniaChart.TabIndex = 4;
             this.pytaniaChart.Text = "chart2";
             // 
@@ -178,15 +162,12 @@
             // 
             chartArea3.Name = "ChartArea1";
             this.kolaChart.ChartAreas.Add(chartArea3);
+            this.kolaChart.Dock = System.Windows.Forms.DockStyle.Fill;
             legend3.Name = "Legend1";
             this.kolaChart.Legends.Add(legend3);
             this.kolaChart.Location = new System.Drawing.Point(413, 335);
             this.kolaChart.Name = "kolaChart";
-            series3.ChartArea = "ChartArea1";
-            series3.Legend = "Legend1";
-            series3.Name = "Series1";
-            this.kolaChart.Series.Add(series3);
-            this.kolaChart.Size = new System.Drawing.Size(300, 82);
+            this.kolaChart.Size = new System.Drawing.Size(308, 82);
             this.kolaChart.TabIndex = 5;
             this.kolaChart.Text = "chart3";
             // 
@@ -194,14 +175,7 @@
             // 
             this.rankingGrid.AllowUserToAddRows = false;
             this.rankingGrid.AllowUserToDeleteRows = false;
-            this.rankingGrid.AutoGenerateColumns = false;
             this.rankingGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.rankingGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.nickDataGridViewTextBoxColumn,
-            this.wynikDataGridViewTextBoxColumn,
-            this.uzytekolaDataGridViewTextBoxColumn,
-            this.pytaniekoncoweDataGridViewTextBoxColumn});
-            this.rankingGrid.DataSource = this.wyswietlRankingBindingSource;
             this.rankingGrid.Dock = System.Windows.Forms.DockStyle.Fill;
             this.rankingGrid.Location = new System.Drawing.Point(25, 55);
             this.rankingGrid.Name = "rankingGrid";
@@ -220,38 +194,8 @@
             this.RankingLabel.Name = "RankingLabel";
             this.RankingLabel.Size = new System.Drawing.Size(345, 22);
             this.RankingLabel.TabIndex = 7;
-            this.RankingLabel.Text = "RANKING";
+            this.RankingLabel.Text = "HISTORIA GIER";
             this.RankingLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // nickDataGridViewTextBoxColumn
-            // 
-            this.nickDataGridViewTextBoxColumn.DataPropertyName = "Nick";
-            this.nickDataGridViewTextBoxColumn.HeaderText = "Nick";
-            this.nickDataGridViewTextBoxColumn.Name = "nickDataGridViewTextBoxColumn";
-            this.nickDataGridViewTextBoxColumn.ReadOnly = true;
-            this.nickDataGridViewTextBoxColumn.Width = 60;
-            // 
-            // wynikDataGridViewTextBoxColumn
-            // 
-            this.wynikDataGridViewTextBoxColumn.DataPropertyName = "Wynik";
-            this.wynikDataGridViewTextBoxColumn.HeaderText = "Wynik";
-            this.wynikDataGridViewTextBoxColumn.Name = "wynikDataGridViewTextBoxColumn";
-            this.wynikDataGridViewTextBoxColumn.ReadOnly = true;
-            this.wynikDataGridViewTextBoxColumn.Width = 80;
-            // 
-            // uzytekolaDataGridViewTextBoxColumn
-            // 
-            this.uzytekolaDataGridViewTextBoxColumn.DataPropertyName = "Uzyte_kola";
-            this.uzytekolaDataGridViewTextBoxColumn.HeaderText = "Użyte Koła";
-            this.uzytekolaDataGridViewTextBoxColumn.Name = "uzytekolaDataGridViewTextBoxColumn";
-            this.uzytekolaDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // pytaniekoncoweDataGridViewTextBoxColumn
-            // 
-            this.pytaniekoncoweDataGridViewTextBoxColumn.DataPropertyName = "Pytanie_koncowe";
-            this.pytaniekoncoweDataGridViewTextBoxColumn.HeaderText = "Pytanie Końcowe";
-            this.pytaniekoncoweDataGridViewTextBoxColumn.Name = "pytaniekoncoweDataGridViewTextBoxColumn";
-            this.pytaniekoncoweDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // Statystyki
             // 
@@ -266,7 +210,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pytaniaChart)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.kolaChart)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.rankingGrid)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.wyswietlRankingBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -286,6 +229,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn wynikDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn uzytekolaDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn pytaniekoncoweDataGridViewTextBoxColumn;
-        private System.Windows.Forms.BindingSource wyswietlRankingBindingSource;
     }
 }

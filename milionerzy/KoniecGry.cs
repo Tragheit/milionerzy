@@ -34,7 +34,7 @@ namespace milionerzy
         private void updateLifebuoys(string koła)
         {
             if (koła.Contains("TE"))
-                telefonPB.BackgroundImage = Properties.Resources.endPhoneX;
+                telefonPB.BackgroundImage = Properties.Resources.end50X;
             if (koła.Contains("PU"))
                 publikaPB.BackgroundImage = Properties.Resources.endPeopleX;
             if (koła.Contains("PP"))
